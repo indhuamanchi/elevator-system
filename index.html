@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator Control System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="floor-panel">
+    <div class="floor" id="floor-5">
+      <span>Floor 5</span>
+      <button class="call-btn" data-floor="5" data-direction="up">Up</button>
+      <button class="call-btn" data-floor="5" data-direction="down">Down</button>
+    </div>
+    <div class="floor" id="floor-4">
+      <span>Floor 4</span>
+      <button class="call-btn" data-floor="4" data-direction="up">Up</button>
+      <button class="call-btn" data-floor="4" data-direction="down">Down</button>
+    </div>
+    <div class="floor" id="floor-3">
+      <span>Floor 3</span>
+      <button class="call-btn" data-floor="3" data-direction="up">Up</button>
+      <button class="call-btn" data-floor="3" data-direction="down">Down</button>
+    </div>
+    <div class="floor" id="floor-2">
+      <span>Floor 2</span>
+      <button class="call-btn" data-floor="2" data-direction="up">Up</button>
+      <button class="call-btn" data-floor="2" data-direction="down">Down</button>
+    </div>
+    <div class="floor" id="floor-1">
+      <span>Floor 1</span>
+      <button class="call-btn" data-floor="1" data-direction="up">Up</button>
+      <button class="call-btn" data-floor="1" data-direction="down">Down</button>
+    </div>
+  </div>
+
+  <div class="display-board">
+    <h2>Elevator Status</h2>
+    <p>Current Floor: <span id="current-floor">1</span></p>
+    <p>Direction: <span id="direction">Idle</span></p>
+    <p>Queue: <span id="queue">None</span></p>
+    <p>Door: <span id="door-status">Closed</span></p>
+  </div>
+  
+
+  <div class="control-panel">
+<p> Inside Elevator </p>
+  <button class="floor-btn">1</button>
+  <button class="floor-btn">2</button>
+  <button class="floor-btn">3</button>
+  <button class="floor-btn">4</button>
+  <button class="floor-btn">5</button>
+  <button class="control-btn" id="open-door">Open Door</button>
+  <button class="control-btn" id="close-door">Close Door</button>
+  </div>
+
+ 
+  
+  <script src="script.js"></script>
+</body>
+</html>
